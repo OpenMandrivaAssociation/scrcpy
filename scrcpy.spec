@@ -13,6 +13,7 @@ BuildRequires:  ninja
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavformat)
+BuildRequires:  java-current
 
 %description
 his application provides display and control of Android devices connected on USB (or over TCP/IP). 
@@ -22,7 +23,7 @@ It does not require any root access. It works on GNU/Linux, Windows and macOS.
 %setup -q
 
 %build
-%meson -Dprebuilt_server='%{S:1}'
+%meson
 %meson_build
 
 %install
