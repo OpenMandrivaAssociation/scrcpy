@@ -9,7 +9,7 @@ Source0:        https://github.com/Genymobile/scrcpy/archive/v%{version}/%{name}
 # We use prebuild server jar file, to save time and nerves without compiling it with java. Suggested by upstream anyway (angry)
 Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
 BuildRequires:  meson
-BuildRequires:  ninja-build
+BuildRequires:  ninja
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavformat)
