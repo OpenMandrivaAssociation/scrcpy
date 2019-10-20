@@ -7,9 +7,11 @@ Group:          Applications/Internet
 URL:            https://github.com/Genymobile/scrcpy
 Source0:        https://github.com/Genymobile/scrcpy/archive/v%{version}/%{name}-%{version}.tar.gz
 # We use prebuild server jar file, to save time and nerves without compiling it with java. Suggested by upstream anyway (angry)
+# FIXME we should build from source at some point to make sure nobody hid any backdoors inside prebuilt files...
 Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
 BuildRequires:  meson
 BuildRequires:  ninja
+BuildRequires:	jdk-current
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavformat)
@@ -22,10 +24,12 @@ It does not require any root access. It works on GNU/Linux, Windows and macOS.
 %setup -q
 
 %build
+. %{_sysconfdir}/profile.d/90java.sh
 %meson -Dprebuilt_server=%{SOURCE1}
 %meson_build
 
 %install
+. %{_sysconfdir}/profile.d/90java.sh
 %meson_install
 
 %files
