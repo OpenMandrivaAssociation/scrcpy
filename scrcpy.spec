@@ -22,7 +22,7 @@ It does not require any root access. It works on GNU/Linux, Windows and macOS.
 %setup -q
 
 %build
-%meson -Dprebuilt_server="../%{name}-server-v%{version}.jar"
+%meson -Dprebuilt_server=%{name}-server-v%{version}.jar
 %meson_build
 
 %install
