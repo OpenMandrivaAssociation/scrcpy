@@ -1,6 +1,6 @@
 Name:           scrcpy
 Version:        1.10
-Release:        1
+Release:        2
 Summary:        Display and control your Android device from Linux OpenMandriva
 License:        Apache-2.0
 Group:          Applications/Internet
@@ -15,6 +15,7 @@ BuildRequires:	jdk-current
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavformat)
+Requires:  android-tools
 
 %description
 his application provides display and control of Android devices connected on USB (or over TCP/IP). 
