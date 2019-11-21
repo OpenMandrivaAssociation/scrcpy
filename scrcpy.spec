@@ -1,6 +1,6 @@
 Name:           scrcpy
-Version:        1.10
-Release:        2
+Version:        1.11
+Release:        1
 Summary:        Display and control your Android device from Linux OpenMandriva
 License:        Apache-2.0
 Group:          Applications/Internet
@@ -38,3 +38,4 @@ It does not require any root access. It works on GNU/Linux, Windows and macOS.
 %license LICENSE
 %{_bindir}/%{name}
 %{_datadir}/%{name}
+%{_mandir}/man1/scrcpy.1.xz
