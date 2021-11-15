@@ -15,6 +15,7 @@ BuildRequires:	jdk-current
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavformat)
+BuildRequires:  pkgconfig(libusb-1.0)
 Requires:  android-tools
 
 %description
