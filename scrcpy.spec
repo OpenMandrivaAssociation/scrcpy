@@ -24,7 +24,7 @@ his application provides display and control of Android devices connected on USB
 It does not require any root access. It works on GNU/Linux, Windows and macOS.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 . %{_sysconfdir}/profile.d/90java.sh
