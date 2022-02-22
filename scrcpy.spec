@@ -42,3 +42,5 @@ It does not require any root access. It works on GNU/Linux, Windows and macOS.
 %{_datadir}/%{name}
 %{_mandir}/man1/scrcpy.1.*
 %{_iconsdir}/hicolor/*x*/apps/scrcpy.png
+%{_datadir}/bash-completion/completions/scrcpy
+%{_datadir}/zsh/site-functions/_scrcpy
