@@ -44,3 +44,7 @@ It does not require any root access. It works on GNU/Linux, Windows and macOS.
 %{_iconsdir}/hicolor/*x*/apps/scrcpy.png
 %{_datadir}/bash-completion/completions/scrcpy
 %{_datadir}/zsh/site-functions/_scrcpy
+%{_datadir}/applications/scrcpy.desktop
+%{_datadir}/applications/scrcpy-console.desktop
+
+
