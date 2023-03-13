@@ -8,7 +8,7 @@ URL:            https://github.com/Genymobile/scrcpy
 Source0:        https://github.com/Genymobile/scrcpy/archive/v%{version}/%{name}-%{version}.tar.gz
 # We use prebuild server jar file, to save time and nerves without compiling it with java. Suggested by upstream anyway (angry)
 # FIXME we should build from source at some point to make sure nobody hide any backdoors inside prebuilt files...
-Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
+Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar.0
 
 BuildRequires:  meson
 BuildRequires:  ninja
