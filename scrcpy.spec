@@ -20,7 +20,7 @@ BuildRequires:  pkgconfig(libusb-1.0)
 Requires:  android-tools
 
 %description
-his application provides display and control of Android devices connected on USB (or over TCP/IP). 
+This application provides display and control of Android devices connected on USB (or over TCP/IP). 
 It does not require any root access. It works on GNU/Linux, Windows and macOS.
 
 %prep
