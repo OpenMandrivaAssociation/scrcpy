@@ -10,6 +10,8 @@ Source0:        https://github.com/Genymobile/scrcpy/archive/v%{version}/%{name}
 # FIXME we should build from source at some point to make sure nobody hide any backdoors inside prebuilt files...
 Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
 
+Patch0:         https://github.com/Genymobile/scrcpy/commit/4135c411af419f4f86dc9ec9301c88012d616c49.patch
+
 BuildRequires:  meson
 BuildRequires:  ninja
 BuildRequires:	jdk-current
