@@ -1,5 +1,5 @@
 Name:           scrcpy
-Version:        2.3
+Version:        2.3.1
 Release:        1
 Summary:        Display and control your Android device from Linux OpenMandriva
 License:        Apache-2.0
@@ -9,8 +9,6 @@ Source0:        https://github.com/Genymobile/scrcpy/archive/v%{version}/%{name}
 # We use prebuild server jar file, to save time and nerves without compiling it with java. Suggested by upstream anyway (angry)
 # FIXME we should build from source at some point to make sure nobody hide any backdoors inside prebuilt files...
 Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
-
-Patch0:         https://github.com/Genymobile/scrcpy/commit/4135c411af419f4f86dc9ec9301c88012d616c49.patch
 
 BuildRequires:  meson
 BuildRequires:  ninja
