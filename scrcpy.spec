@@ -1,5 +1,5 @@
 Name:           scrcpy
-Version:        3.0.2
+Version:        3.1
 Release:        1
 Summary:        Display and control your Android device from Linux OpenMandriva
 License:        Apache-2.0
